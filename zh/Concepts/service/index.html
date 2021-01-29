@@ -1,0 +1,1884 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.6">
+    
+    
+      
+        <title>Service - Nocalhost Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.cb6bc1d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.39b8e14a.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/home.css">
+    
+      <link rel="stylesheet" href="../../../stylesheets/grid.css">
+    
+    
+
+      
+        
+<script>window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","G-5MSJE3N1YD","nocalhost.dev"),ga("set","anonymizeIp",!0),ga("send","pageview"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}),document.addEventListener("DOMContentSwitch",function(){ga("send","pageview",document.location.pathname)})</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+
+<!-- Track external links -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.body.addEventListener("click", function(ev) {
+                if (ev.target instanceof HTMLElement) {
+                        var el = ev.target.closest("a[href^=http]")
+                        if (el)
+                            ga("send", "event", "outbound", "click", el.href)
+                    }
+            })
+    })
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5MSJE3N1YD"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', "G-5MSJE3N1YD");
+</script>
+
+    
+
+  <!-- Determine title -->
+  
+  
+    
+  
+
+  <!-- The image needs to have an absolute URL -->
+  
+
+  <!-- Open graph meta tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Nocalhost Docs - Service" />
+  <meta property="og:description" content="None" />
+  <meta property="og:url" content="None" />
+  <meta property="og:image" content="assets/images/banner.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1080" />
+  <meta property="og:image:height" content="568" />
+
+  <!-- Twitter meta tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@squidfunk" />
+  <meta name="twitter:creator" content="@squidfunk" />
+  <meta name="twitter:title" content="Nocalhost Docs - Service" />
+  <meta name="twitter:description" content="None" />
+  <meta name="twitter:image" content="assets/images/banner.png" />
+
+  <!-- Extra stylesheets -->
+  <link
+    rel="stylesheet"
+    href=""
+  />
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="nocalhost" data-md-color-primary="" data-md-color-accent="">
+      
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#service" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+
+<!-- Application header -->
+<header class="md-header" data-md-component="header">
+
+  <!-- Top-level navigation -->
+  <nav class="md-header-nav md-grid" aria-label="Header">
+
+    <!-- Link to home -->
+    <a
+      href="../../.."
+      title="Nocalhost Docs"
+      class="md-header-nav__button md-logo"
+      aria-label="Nocalhost Docs"
+    >
+      <img src="/assets/images/logo-white.svg" alt="nocalhost" />
+    </a>
+
+    <!-- Button to open drawer -->
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+
+    <!-- Header title -->
+    <div class="md-header-nav__title" data-md-component="header-title">
+    </div>
+
+    <!-- Button to open search dialogue -->
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+
+      <!-- Search interface -->
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    <style>
+.md-tabs-block {
+    height: 48px;
+}
+.md-tabs__list {
+    display: flex;
+}
+.md-tabs__item a {
+    line-height: 20px;
+}
+@media screen and (max-width: 700px) {
+	.sm-hide {
+		display: none !important;
+	}
+}
+</style>
+
+<div class="md-tabs-block">
+    <ul class="md-tabs__list">
+        <li class="md-tabs__item sm-hide">
+            <a href="/" class="md-tabs__link"> Home </a>
+        </li>
+        <li class="md-tabs__item sm-hide">
+            <a href="/getting-started/" class="md-tabs__link md-tabs__link"> Quick Start </a>
+        </li>
+        <li class="md-tabs__item">
+            <a href="/zh/" class="md-tabs__link"> 中文 </a>
+        </li>
+        <li class="md-tabs__item sm-hide">
+            <a href="https://github.com/nocalhost/nocalhost" target="_blank" class="md-tabs__link">
+                <img src="/assets/images/mark-github.svg" alt="repo" />
+            </a>
+        </li>
+    </ul>
+</div>
+
+    <!-- Repository containing source -->
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <style>
+.md-nav__title .md-nav__button.md-logo img {
+    height: 48px;
+    width: auto;
+}
+.md-nav__title .custon_md-nav__title {
+    height: auto;
+}
+</style>
+
+
+
+
+<!-- Main navigation -->
+<nav
+  class="md-nav md-nav--primary"
+  aria-label="Navigation"
+  data-md-level="0"
+>
+
+  <!-- Site title -->
+  <label class="nocalhost-nav-logo md-nav__title custon_md-nav__title" for="__drawer">
+    <a
+      href="../../.."
+      title="Nocalhost Docs"
+      class="md-nav__button md-logo"
+      aria-label="Nocalhost Docs"
+    >
+      <img src="/assets/images/logo-white.svg" alt="nocalhost" />
+    </a>
+  </label>
+
+  <!-- Repository containing source -->
+  
+
+  <!-- Render item list -->
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1" checked>
+      
+      <label class="md-nav__link" for="nav-1">
+        中文文档
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="中文文档" data-md-level="1">
+        <label class="md-nav__title" for="nav-1">
+          <span class="md-nav__icon md-icon"></span>
+          中文文档
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/" class="md-nav__link">
+        快速上手
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../installation/" class="md-nav__link">
+        安装教程
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deployment/" class="md-nav__link">
+        部署教程
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-4" type="checkbox" id="nav-1-4" checked>
+      
+      <label class="md-nav__link" for="nav-1-4">
+        概念介绍
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="概念介绍" data-md-level="2">
+        <label class="md-nav__title" for="nav-1-4">
+          <span class="md-nav__icon md-icon"></span>
+          概念介绍
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cluster/" class="md-nav__link">
+        Cluster
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../application/" class="md-nav__link">
+        Application
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../user/" class="md-nav__link">
+        User
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Service
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Service
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#service" class="md-nav__link">
+    什么是 Service
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#service_1" class="md-nav__link">
+    Service 提供的功能
+  </a>
+  
+    <nav class="md-nav" aria-label="Service 提供的功能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1. 对开发模式的支持
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 对开发模式的支持">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name-servicetype" class="md-nav__link">
+    name 与 serviceType
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#devcontainerimage" class="md-nav__link">
+    devContainerImage
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#giturl" class="md-nav__link">
+    gitUrl
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#syncdirs" class="md-nav__link">
+    syncDirs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#workdir" class="md-nav__link">
+    workDir
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#devports" class="md-nav__link">
+    devPorts
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2. 启动顺序依赖关系的指定
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 启动顺序依赖关系的指定">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dependpodslabelselector" class="md-nav__link">
+    dependPodsLabelSelector
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependjobslabelselector" class="md-nav__link">
+    dependJobsLabelSelector
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#service_2" class="md-nav__link">
+    Service的最佳实践
+  </a>
+  
+    <nav class="md-nav" aria-label="Service的最佳实践">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-service" class="md-nav__link">
+    1.开发模式中的最佳实践 —— 不预先进行任何 service 配置
+  </a>
+  
+    <nav class="md-nav" aria-label="1.开发模式中的最佳实践 —— 不预先进行任何 service 配置">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    修改开发镜像
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#giturl_1" class="md-nav__link">
+    指定 gitUrl （可选）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#syncdirs_1" class="md-nav__link">
+    修改 syncDirs （可选）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    进入开发模式
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-nocalhost-service" class="md-nav__link">
+    2.开发模式中的最佳实践 —— 在 .nocalhost 目录下进行默认的 service 配置
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../devmode/" class="md-nav__link">
+        DevMode
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../devspace/" class="md-nav__link">
+        DevSpace
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../devcontainer/" class="md-nav__link">
+        DevContainer
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-5" type="checkbox" id="nav-1-5" >
+      
+      <label class="md-nav__link" for="nav-1-5">
+        使用教程
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="使用教程" data-md-level="2">
+        <label class="md-nav__title" for="nav-1-5">
+          <span class="md-nav__icon md-icon"></span>
+          使用教程
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Tutorials/nocalhost-with-k8s-manifests/" class="md-nav__link">
+        Manifest 应用
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Tutorials/nocalhost-with-helm/" class="md-nav__link">
+        Helm Chart 应用
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-6" type="checkbox" id="nav-1-6" >
+      
+      <label class="md-nav__link" for="nav-1-6">
+        参考手册
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="参考手册" data-md-level="2">
+        <label class="md-nav__title" for="nav-1-6">
+          <span class="md-nav__icon md-icon"></span>
+          参考手册
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../References/nocalhost-config-yaml-spec/" class="md-nav__link">
+        Nocalhost 配置说明
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../References/architecture/" class="md-nav__link">
+        Nocalhost 架构
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../References/cli-commands/" class="md-nav__link">
+        Nhctl CLI
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../References/syncfilepattern-ignorefilepattern/" class="md-nav__link">
+        文件同步与忽略
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../References/resource-management/" class="md-nav__link">
+        k8s 资源管理
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-7" type="checkbox" id="nav-1-7" >
+      
+      <label class="md-nav__link" for="nav-1-7">
+        常见问题
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="常见问题" data-md-level="2">
+        <label class="md-nav__title" for="nav-1-7">
+          <span class="md-nav__icon md-icon"></span>
+          常见问题
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../FAQ/work-with-helm/" class="md-nav__link">
+        Helm 工作负载名称
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../FAQ/dep-label-selector/" class="md-nav__link">
+        依赖标签选择器
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../FAQ/deployment-with-hpa/" class="md-nav__link">
+        HPA 控制的 Deployment
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../FAQ/multi-container-pods/" class="md-nav__link">
+        多容器 Pod
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-7-5" type="checkbox" id="nav-1-7-5" >
+      
+      <label class="md-nav__link" for="nav-1-7-5">
+        VSCode
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="VSCode" data-md-level="3">
+        <label class="md-nav__title" for="nav-1-7-5">
+          <span class="md-nav__icon md-icon"></span>
+          VSCode
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../FAQ/vscode/vscode-plugin-limits/" class="md-nav__link">
+        VSCode 插件功能限制
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../FAQ/ssh-private-keys-passphrase/" class="md-nav__link">
+        加密的 SSH 私钥
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../FAQ/default-account/" class="md-nav__link">
+        默认管理账户
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../FAQ/pvc-unbound/" class="md-nav__link">
+        无可用的 pv
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../FAQ/support-version/" class="md-nav__link">
+        支持的版本
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../FAQ/line-endings/" class="md-nav__link">
+        换行符
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../getting-started/" class="md-nav__link">
+        Getting started
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../installation/" class="md-nav__link">
+        Installation
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+      
+      <label class="md-nav__link" for="nav-4">
+        Concepts
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Concepts" data-md-level="1">
+        <label class="md-nav__title" for="nav-4">
+          <span class="md-nav__icon md-icon"></span>
+          Concepts
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Concepts/cluster/" class="md-nav__link">
+        Cluster
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Concepts/application/" class="md-nav__link">
+        Application
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Concepts/user/" class="md-nav__link">
+        User
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Concepts/service/" class="md-nav__link">
+        Service
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Concepts/devspace/" class="md-nav__link">
+        DevSpace
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Concepts/devcontainer/" class="md-nav__link">
+        DevContainer
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Concepts/devmode/" class="md-nav__link">
+        DevMode
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" >
+      
+      <label class="md-nav__link" for="nav-5">
+        References
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="References" data-md-level="1">
+        <label class="md-nav__title" for="nav-5">
+          <span class="md-nav__icon md-icon"></span>
+          References
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../References/architecture/" class="md-nav__link">
+        Architecture
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../References/nocalhost-config-yaml-spec/" class="md-nav__link">
+        Config Specs
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../References/cli-commands/" class="md-nav__link">
+        CLI Commands
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../References/syncfilepattern-ignorefilepattern/" class="md-nav__link">
+        Sync/Ignore File Pattern
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../References/service-dependency/" class="md-nav__link">
+        Service Dependency
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../References/port-forward/" class="md-nav__link">
+        Port Forward
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" >
+      
+      <label class="md-nav__link" for="nav-6">
+        FAQ
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="FAQ" data-md-level="1">
+        <label class="md-nav__title" for="nav-6">
+          <span class="md-nav__icon md-icon"></span>
+          FAQ
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../FAQ/work-with-helm/" class="md-nav__link">
+        Work with Helm
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../FAQ/dep-label-selector/" class="md-nav__link">
+        Dependency Label Selector
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../FAQ/deployment-with-hpa/" class="md-nav__link">
+        Deployment with HPA
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../FAQ/multi-container-pods/" class="md-nav__link">
+        Multi-container Pods
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-5" type="checkbox" id="nav-6-5" >
+      
+      <label class="md-nav__link" for="nav-6-5">
+        VSCode
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="VSCode" data-md-level="2">
+        <label class="md-nav__title" for="nav-6-5">
+          <span class="md-nav__icon md-icon"></span>
+          VSCode
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../FAQ/vscode/vscode-plugin-limits/" class="md-nav__link">
+        VSCode Plugin Limits
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../FAQ/ssh-private-keys-passphrase/" class="md-nav__link">
+        SSH Private Keys Passphrase
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../FAQ/default-account/" class="md-nav__link">
+        Default admin account
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../FAQ/pvc-unbound/" class="md-nav__link">
+        No persistent volumes available
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../FAQ/support-version/" class="md-nav__link">
+        Version Support
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../FAQ/line-endings/" class="md-nav__link">
+        Line Endings
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#service" class="md-nav__link">
+    什么是 Service
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#service_1" class="md-nav__link">
+    Service 提供的功能
+  </a>
+  
+    <nav class="md-nav" aria-label="Service 提供的功能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    1. 对开发模式的支持
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 对开发模式的支持">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name-servicetype" class="md-nav__link">
+    name 与 serviceType
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#devcontainerimage" class="md-nav__link">
+    devContainerImage
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#giturl" class="md-nav__link">
+    gitUrl
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#syncdirs" class="md-nav__link">
+    syncDirs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#workdir" class="md-nav__link">
+    workDir
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#devports" class="md-nav__link">
+    devPorts
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    2. 启动顺序依赖关系的指定
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 启动顺序依赖关系的指定">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dependpodslabelselector" class="md-nav__link">
+    dependPodsLabelSelector
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependjobslabelselector" class="md-nav__link">
+    dependJobsLabelSelector
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#service_2" class="md-nav__link">
+    Service的最佳实践
+  </a>
+  
+    <nav class="md-nav" aria-label="Service的最佳实践">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-service" class="md-nav__link">
+    1.开发模式中的最佳实践 —— 不预先进行任何 service 配置
+  </a>
+  
+    <nav class="md-nav" aria-label="1.开发模式中的最佳实践 —— 不预先进行任何 service 配置">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    修改开发镜像
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#giturl_1" class="md-nav__link">
+    指定 gitUrl （可选）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#syncdirs_1" class="md-nav__link">
+    修改 syncDirs （可选）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    进入开发模式
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-nocalhost-service" class="md-nav__link">
+    2.开发模式中的最佳实践 —— 在 .nocalhost 目录下进行默认的 service 配置
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+  
+                
+                
+                  <h1>Service</h1>
+                
+                <h2 id="service">什么是 Service</h2>
+<p><code>Service</code> 与 <code>kubernetes</code> 的 <code>svc</code> 完全不同，<code>Service</code> 可以认为是对 <code>Deployment</code> 的增强，对应我们应用中的一个具体服务，<code>Service</code> 目前支持两种功能：</p>
+<ul>
+<li>
+<p>对 <code>Nocalhost</code> <code>Dev-Mode</code> 的配置，例如进入开发容器后的工作空间是哪个，将哪些文件同步到开发容器中，等。</p>
+</li>
+<li>
+<p>支持基于依赖关系的 <code>deployment</code> 启动顺序控制</p>
+</li>
+</ul>
+<p><strong>这些配置并不是必须的！完全不进行配置，也可以照常创建 <code>Application</code>、<code>Cluster</code> 等等，也可以照常部署你的应用，<code>Service</code> 只在你有需要时才需要配置。</strong></p>
+<p>例如，<code>Nocalhost</code> 支持控制一个资源的启动顺序，例如某个  <code>deployment</code> 必须依赖于某个<code>k8s job</code> 执行完毕，那么可以在 <strong>config.yaml</strong> 做如下配置：</p>
+<div class="highlight"><pre><span></span><code>services:
+  - name: details
+    type: deployment
+    dependJobsLabelSelector:
+    - &quot;dep-job&quot;
+</code></pre></div>
+<p>这表示你 <code>kind: Deployment</code> <code>name: Deployment</code> 的这个资源 <a href="https://github.com/nocalhost/bookinfo/blob/main/manifest/templates/detail.yaml" target="_blank">detail.yaml</a>，将依赖于一个 <code>name: dep-job</code> 的任务 <a href="https://github.com/nocalhost/bookinfo/blob/main/manifest/templates/bookinfo/dep-job.yaml" target="_blank">dep-job.yaml</a> 执行完毕。</p>
+<div class="highlight"><pre><span></span><code>apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: details
+</code></pre></div>
+<h2 id="service_1">Service 提供的功能</h2>
+<h3 id="1">1. 对开发模式的支持</h3>
+<p>前面说到 <code>Service</code> 承担两种角色，其一是对开发模式的支持，我们以如下这个配置为例，逐个说明：</p>
+<div class="highlight"><pre><span></span><code>services:
+  - name: productpage
+    serviceType: deployment
+    gitUrl: https://github.com/nocalhost/bookinfo-productpage
+    devContainerImage: codingcorp-docker.pkg.coding.net/nocalhost/dev-images/python:3.7.7-slim-productpage
+    workDir: /home/nocalhost-dev
+    syncDirs:
+    - ./
+    devPorts:
+    - 39080:9080
+</code></pre></div>
+<h4 id="name-servicetype"><code>name</code> 与 <code>serviceType</code></h4>
+<p>当你想使用 <code>service</code> 时，<code>name</code> 与 <code>serviceType</code> 是必填项，用于定位到某个 manifest，目前只支持 <code>deployment</code> 这种 <code>serviceType</code>例如当前有一个 <code>Deployment</code> ，名字为 details：</p>
+<div class="highlight"><pre><span></span><code>kind: Deployment
+metadata:
+  name: details
+</code></pre></div>
+<p>想要对它进行配置，则需要在 <strong>config.yaml</strong> 内的 <code>services</code> 下进行如下配置：</p>
+<div class="highlight"><pre><span></span><code>  - name: productpage
+    serviceType: deployment
+</code></pre></div>
+<h4 id="devcontainerimage">devContainerImage</h4>
+<p>进入开发模式所使用的容器，启动 <code>DevMode</code> 时，实际上会使用开发容器来替换掉目标镜像。我们会为大多数开发语言提供默认的开发容器，这个容器里面通常包含一些常用的调试工具和常用库。</p>
+<p>当然你也可以使用自己的镜像，如：</p>
+<div class="highlight"><pre><span></span><code>services:
+  - name: productpage
+    serviceType: deployment
+    devContainerImage: foo/bar/python:dev
+</code></pre></div>
+<h4 id="giturl">gitUrl</h4>
+<p>用于标明与此 <code>Service</code> 对应的源码地址，在进入 <code>Dev-Mode</code> 时，你可以选择将本地某个目录同步到开发容器中，也可以选择从 <code>git</code> 仓库拉取，此时如果你已经配置了 <code>gitUrl</code>， 我们会自动帮你从这个 <code>gitUrl</code> 检出代码。</p>
+<h4 id="syncdirs">syncDirs</h4>
+<p>可选项，数组类型，选择将源码目录的哪些文件夹同步到开发容器中，默认为 <code>.</code> ，既所有。</p>
+<div class="highlight"><pre><span></span><code>services:
+  - name: productpage
+    serviceType: deployment
+    syncDirs:
+            - foo/
+            - bar/
+</code></pre></div>
+<h4 id="workdir">workDir</h4>
+<p>这是一个可选项，用于标明进入开发模式后的工作目录，以及同步文件所存放的目录，默认将使用 <code>/home/nocalhost-dev</code></p>
+<h4 id="devports">devPorts</h4>
+<p>自动转发的端口，在进入开发模式后，会自动将其端口转发到本地端口上，格式为<code>localPort:remotePort</code>，如：</p>
+<div class="highlight"><pre><span></span><code>services:
+  - name: productpage
+    serviceType: deployment
+    devPorts: 8080:10000
+</code></pre></div>
+<p>也可以支持 <code>:10000</code> 这种写法，将随机转发到本地的某个端口。</p>
+<h3 id="2">2. 启动顺序依赖关系的指定</h3>
+<h4 id="dependpodslabelselector">dependPodsLabelSelector</h4>
+<p>表示等待至少一个拥有此 <code>label</code> 的 <code>pod</code> 处于 <code>RUNNING</code> 状态，否则此 <code>Service</code> 将处于 <code>init Container</code> 状态。例如一个服务，例如 productpage 依赖于另一个服务 foo：</p>
+<div class="highlight"><pre><span></span><code>apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: foo
+</code></pre></div>
+<p>那么可以对这个 <code>service</code> 进行如下配置：</p>
+<div class="highlight"><pre><span></span><code>services:
+  - name: productpage
+    serviceType: deployment
+    dependPodsLabelSelector: 
+            - &quot;app=foo&quot;
+</code></pre></div>
+<h4 id="dependjobslabelselector">dependJobsLabelSelector</h4>
+<p>表示等待至少拥有此 <code>label</code> 的 <code>job</code> 已经完成并处于 <code>Succeeded</code> 状态，同样，如果一个服务依赖，例如 productpage 依赖于一个 job：</p>
+<div class="highlight"><pre><span></span><code>apiVersion: batch/v1
+kind: Job
+metadata:
+  labels:
+    foo: bar
+</code></pre></div>
+<p>同样可以对这个 <code>service</code> 进行如下配置：</p>
+<div class="highlight"><pre><span></span><code>services:
+  - name: productpage
+    serviceType: deployment
+    dependJobsLabelSelector: 
+            - &quot;foo=bar&quot;
+</code></pre></div>
+<h2 id="service_2">Service的最佳实践</h2>
+<h3 id="1-service">1.开发模式中的最佳实践 —— 不预先进行任何 service 配置</h3>
+<p>前面说到 <code>service</code> 并不是必须配置的，如果你没有进行任何 <code>service</code> 相关的配置，当你想进入开发模式时，<code>Nocalhost-Plug-In</code> 会为你自动生成一个模板文件，你只需对其进行修改并保存即可。</p>
+<p>点击带有感叹号的齿轮，我们会为你生成一个模板文件：</p>
+<p><a href="../../../assets/images/concept/service-default.png" target="_blank"> <img alt="" src="../../../assets/images/concept/service-default.png" /> </a></p>
+<h4 id="_1">修改开发镜像</h4>
+<p>手动修改 <code>devContainerImage</code>，目前我们提供 <code>python</code>、<code>golang</code>、<code>ruby</code>、<code>node</code>、<code>perl</code>、<code>rust</code>、<code>php</code>、<code>java</code> 这几种默认的开发镜像。</p>
+<p>镜像格式如下：</p>
+<div class="highlight"><pre><span></span><code>codingcorp-docker.pkg.coding.net/nocalhost/dev-images/LANGUAGE:latest
+</code></pre></div>
+<p>例如想要使用 <code>java</code> 的默认镜像，则修改 <code>devContainerImage</code> 为 <code>codingcorp-docker.pkg.coding.net/nocalhost/dev-images/java:latest</code> 即可。或者可以使用其他任意镜像，我们会默认使用 /bin/bash 、/bin/csh 或 /bin/sh 作为默认命令来进入此镜像。</p>
+<h4 id="giturl_1">指定 <code>gitUrl</code> （可选）</h4>
+<p>当你进入开发模式之前，<code>Nocalhost-Plug-In</code> 会让你选择从本地指定源码目录或者从 <code>git</code> 检出，如果你本地已有此 <code>deployment</code> 的源码，则不需要进行 <code>gitUrl</code> 配置，直接选择 <code>Open local derectory</code> 即可。</p>
+<p><a href="../../../assets/images/concept/enter-dev-mode.png" target="_blank"> <img alt="" src="../../../assets/images/concept/enter-dev-mode.png" /> </a></p>
+<p>反之，如果你希望 <code>Nocalhost</code> 帮你进行检出，则修改 <code>girUrl</code> 到对应值。</p>
+<h4 id="syncdirs_1">修改 <code>syncDirs</code> （可选）</h4>
+<p>在默认提供的配置模板中，我们会自动填写同步 git 目录（或者所选目录）下的所有文件，即 <code>.</code>：</p>
+<div class="highlight"><pre><span></span><code># dirs to sync, relative to the root dir of source code
+# type: string[]
+# default value: [&quot;.&quot;]
+# optional
+syncDirs:
+  - &quot;.&quot;
+</code></pre></div>
+<p>如果你只想同步指定的几个目录，可以对其进行修改，如：</p>
+<div class="highlight"><pre><span></span><code>syncDirs:
+  - &quot;bar/&quot;
+  - &quot;foo/&quot;
+</code></pre></div>
+<h4 id="_2">进入开发模式</h4>
+<p>做完上述配置后，点击锤子进入开发模式，我们将使用配置中指定的镜像来替换掉原有的镜像，并将对应的文件同步到这个容器中。</p>
+<h3 id="2-nocalhost-service">2.开发模式中的最佳实践 —— 在 .nocalhost 目录下进行默认的 service 配置</h3>
+<p>如果你希望维护一份默认的配置，则在 <code>Application</code> 所指定的 <code>git</code> 仓库中，在根目录新增 .nocalhost 文件夹，并新增 <strong>config.yaml</strong> 文件。</p>
+<div class="highlight"><pre><span></span><code>.nocalhost/
+                    config.yaml
+README.MD
+kubemanifest/
+                        xxx.yaml
+                        ...
+foo.java
+...
+</code></pre></div>
+<p>例如：</p>
+<div class="highlight"><pre><span></span><code>services:
+  - name: productpage
+    serviceType: deployment
+    gitUrl: https://github.com/nocalhost/bookinfo-productpage
+    devContainerImage: codingcorp-docker.pkg.coding.net/nocalhost/dev-images/python:3.7.7-slim-productpage
+    workDir: /home/nocalhost-dev
+    syncDirs:
+    - ./
+    devPorts:
+    - 39080:9080
+    dependJobsLabelSelector:
+    - &quot;dep-job&quot;
+  - name: details
+    serviceType: deployment
+    gitUrl: https://github.com/nocalhost/bookinfo-details.git
+    devContainerImage: codingcorp-docker.pkg.coding.net/nocalhost/dev-images/ruby:2.7.1-slim
+    syncDirs:
+    - ./
+    workDir: /home/nocalhost-dev
+  - name: ratings
+    serviceType: deployment
+    gitUrl: https://github.com/nocalhost/bookinfo-ratings.git
+    devContainerImage: codingcorp-docker.pkg.coding.net/nocalhost/dev-images/node:12.18.1-slim
+    workDir: /home/nocalhost-dev
+    syncDirs:
+    - ./
+    dependJobsLabelSelector:
+    - &quot;dep-job&quot;
+    dependPodsLabelSelector:
+    - &quot;productpage&quot;
+    - &quot;app.kubernetes.io/name=productpage&quot;
+</code></pre></div>
+<p><code>Deployment</code> 进行了 <code>service</code>  的配置，当用户 <code>Install</code> 此 <code>Application</code> 时，会拿到这些默认配置，如 'ratings' 这个 <code>deployment</code>，点击齿轮查看当前的配置：</p>
+<p><a href="../../../assets/images/concept/modify-service-config.png" target="_blank"> <img alt="" src="../../../assets/images/concept/modify-service-config.png" /> </a></p>
+<p>用户可以自由的基于这些配置做修改，<strong>这些修改仅在本地生效。</strong></p>
+                
+              
+
+  <!-- Content footer -->
+  <footer class="tx-content__footer md-typeset">
+  </footer>
+
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../user/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                User
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../devmode/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                DevMode
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/vendor.53cc9318.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.e9c9f54f.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../../assets/javascripts/worker/search.9c0e82ba.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
